@@ -5,7 +5,7 @@ Easy UST-一个适用于python的UST工程读取模块
 首先clone  
 然后cd到easyust目录  
 最后：`$ python3 example.py `  
-![](pic/pic01.jpg)  
+![](/pic/pic01.jpg)  
 显示成这样就说明你成功了！  
 下一步：打开`example.py`，对着下面的函数列表研究一下每个函数怎么用
 ## 函数列表：
@@ -30,7 +30,7 @@ Easy UST-一个适用于python的UST工程读取模块
 注：其实还有一堆隐藏函数，只是我也搞不懂这些函数有什么卵用，所以没把它放到文档里
 ## 示例
 示例工程截图(请忽略乱码)：  
-![](exampleproject.jpg)  
+![](/pic/exampleproject.jpg)  
 首先导入：`>>> import easyust`  
 然后转码工程：`>>> easyust.cproject('example.ust','example.ini')`  
 模块会返回一元组告诉你输入和输出文件的路径：`('/home/daze/Documents/GitHub/easyust/example.ust', '/home/daze/Documents/GitHub/easyust/example.ini')`  
