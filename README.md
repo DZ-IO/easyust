@@ -26,6 +26,7 @@ Easy UST-一个适用于python的UST工程读取模块
 |rlength|读取音符长度|easyust.rlength(easyust工程,音符编号)|-|字符串：长度|
 |rlyric|读取歌词|easyust.rlyric(easyust工程,音符编号))|-|字符串：歌词|
 |rNoteNum|读取音符号|easyust.rNoteNum(easyust工程,音符编号)|可配合getnote使用：easyust.getnote(easyust.rNoteNum(easyust工程,音符编号))|字符串：音符号（如60）
+
 注：其实还有一堆隐藏函数，只是我也搞不懂这些函数有什么卵用，所以没把它放到文档里
 ## 示例
 示例工程截图(请忽略乱码)：  
