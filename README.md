@@ -2,8 +2,9 @@
 Easy UST-一个适用于python的UST工程读取模块  
 （未来会不会有Easy VSQx、Easy VPR和Easy s5p呢？）
 ## 快速开始
-首先clone  
-然后cd到easyust目录  
+首先安装依赖`$ sudo apt-get update && sudo apt-get install python3 python3-pip git -y && pip3 install configparser`  
+然后clone`$ git clone https://github.com/daze456/easyust.git`  
+接着cd到easyust目录`$ cd easyust`  
 最后：`$ python3 example.py `  
 ![](/pic/pic01.jpg)  
 显示成这样就说明你成功了！  
