@@ -92,12 +92,7 @@ def rflags(iniust, debug = 'no') :
     return conf.get('#SETTING','Flags')
 
 def rnallnote(iniust, debug = 'no') :
-    iniust = os.path.abspath(iniust)
-    conf = configparser.ConfigParser()
-    conf.read(iniust)
-    allnote = conf.sections()
-    allnote = allnote[2:]
-    allnote = allnote[:-1]
+    allnote = rallnote(iniust)
     allnote = len(allnote)
     if debug == 'yes' : print(allnote)
     return allnote
@@ -107,7 +102,10 @@ def rallnote(iniust, debug = 'no') :
     conf = configparser.ConfigParser()
     conf.read(iniust)
     allnote = conf.sections()
-    allnote = allnote[2:]
+    if allnote[0] != '#VERSION':
+        allnote = allnote[1:]
+    else:
+        allnote = allnote[2:]
     allnote = allnote[:-1]
     if debug == 'yes' : 
         for x in allnote : print(x)
