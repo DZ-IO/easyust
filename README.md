@@ -40,7 +40,12 @@ Easy UST-一个适用于python的UST工程读取模块
 比如曲速：  
 `>>> easyust.rtempo('example.ini')`  
 `'173.22'`  
-当然，支持的函数见函数列表
+当然，支持的函数见函数列表  
+另外，你也可以把它作为包导入（1.2.0新特性）：  
+在你的工程目录下：  
+`$ git clone https://github.com/daze456/easyust.git`  
+在你的程序里：  
+`from easyust import easyust`  
 ## 灵感
 这货其实是[UCore](https://github.com/daze456/UCore)的附属产品，或者是我为了方便UTAUCore开发特意搞的模块。。。  
 当然，本模块使用Apache License开源，意味着你可以闭源（我不想限制各位闭源的权利）
