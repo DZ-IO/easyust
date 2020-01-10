@@ -1,7 +1,10 @@
+# -*- coding:utf-8 -*-
+
 import easyust #导入模块
 cproject = easyust.cproject('example.ust','example.ini') #转码工程，并获取临时文件路径
 print('输入文件：', cproject[0]) #打印输入文件路径
 print('临时文件：', cproject[1]) #打印临时文件路径
+print('是否为UST：', easyust.isust(cproject[1]))
 print('曲速：', easyust.rtempo(cproject[1])) #获取曲速
 print('工程名：', easyust.rpname(cproject[1])) #获取工程名
 print('音源：', easyust.rdb(cproject[1])) #获取音源

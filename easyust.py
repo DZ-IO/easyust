@@ -35,6 +35,15 @@ def cproject(ust, outfile = os.getcwd()+'/temp.ini', debug = 'no') :
             if t:
                 t.close()
 
+def isust(iniust, debug = 'no') :
+    iniust = os.path.abspath(iniust)
+    conf = configparser.ConfigParser()
+    conf.read(iniust)
+    isust = conf.sections()
+    isust = '#0000' in isust
+    if debug == 'yes' : print(isust)
+    return isust
+
 def rtempo(iniust, debug = 'no') :
     iniust = os.path.abspath(iniust)
     conf = configparser.ConfigParser()
