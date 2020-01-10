@@ -50,5 +50,5 @@ Easy UST-一个适用于python的UST工程读取模块
 在你的程序里：  
 `import easyust.easyust as easyust`  
 ## 灵感
-这货其实是[UCore](https://github.com/daze456/UCore)的附属产品，或者是我为了方便UTAUCore开发特意搞的模块。。。  
+这货其实是[ZUC2](https://github.com/daze456/ZUC2)的附属产品，或者是我为了方便UTAUCore开发特意搞的模块。。。  
 当然，本模块使用Apache License开源，意味着你可以闭源（我不想限制各位闭源的权利）
