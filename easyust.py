@@ -161,3 +161,11 @@ def rEnvelope(iniust, nnote, debug = 'no') :
     conf.read(iniust)
     if debug == 'yes' : print(conf.get(nnote,'Envelope'))
     return conf.get(nnote,'Envelope')
+
+def rnote(iniust, nnote, debug = 'no') :
+    length = rlength(iniust,nnote,debug)
+    tempo = rtempo(iniust,debug)
+    lyric = rlyric(iniust,nnote,debug)
+    notenum = rNoteNum(iniust,nnote,debug)
+    note = getnote(notenum)
+    return (length, tempo, lyric, notenum, note)
